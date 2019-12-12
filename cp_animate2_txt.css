@@ -6,8 +6,8 @@
    Review Assignment
 
    Cinema Penguin Styles for Animation
-   Author: 
-   Date:   
+   Author: Elijah Collins
+   Date:   12/11/19
 
    Filename: cp_animate2.css
 
@@ -15,8 +15,19 @@
 
 /* Transition Styles */
 
-
-
+nav#topLinks a{
+   color: rgb(255, 255, 255);
+   text-shadow: rgba(0, 0, 0, 1) 1px -1px 1px;
+   transform: scale(1, 1);
+   translate: translateY(0px);
+   transition: 1.2s linear;
+}
+nav#topLinks a:hover{
+   color: rgb(255, 183, 25);
+   text-shadow: rgba(0, 0, 0, 0.5) 0px 15px 4px;
+   transform: scale(2, 2);
+   translate: translateY(-15px);
+}
 
 /* Marquee Styles */
 
