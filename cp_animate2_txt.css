@@ -31,13 +31,26 @@ nav#topLinks a:hover{
 
 /* Marquee Styles */
 
-
-
+div#marquee{
+   position: relative
+}
+div#marquee > table#filmlist{
+   position: absolute;
+}
 
 /* Keyframe Styles */
   
-
-
+@keyframes scroll{
+   0%{top: 250px;}
+   100%{top: -1300px;}
+}
 
 /* Animation Styles */
 
+div#marquee > table{
+   animation: scroll 50s linear;
+   -moz-animation-iteration-count: infinite;
+}
+div#marquee:hover table{
+   animation-play-state: paused;
+}
